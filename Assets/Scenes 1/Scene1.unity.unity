@@ -54061,7 +54061,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
-<<<<<<< HEAD
 --- !u!1 &1946822472
 GameObject:
   m_ObjectHideFlags: 0
@@ -54211,8 +54210,6 @@ PolygonCollider2D:
       - {x: 1.26, y: -1.91}
       - {x: 7.26, y: -1.91}
       - {x: 7.26, y: 0.09}
-=======
->>>>>>> parent of 42222be (TreeCrown)
 --- !u!4 &2012816828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1089368425683487043, guid: 3657d360ec61142ef8b4e6187ba4893f,
