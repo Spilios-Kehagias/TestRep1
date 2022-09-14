@@ -15,7 +15,7 @@ public class EnemyKillBox : MonoBehaviour
     {
         if (collision.CompareTag("Player") == true)
         {
-            if (collision.gameObject.GetComponent<PlayerMovem>().isFalling() == true)
+            if (collision.gameObject.GetComponent<PlayerMovement>().IsFalling() == true)
             {
                 gameObject.GetComponentInParent<EnemySlimeMovement>().KillMe();
             }

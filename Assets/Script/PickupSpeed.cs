@@ -6,7 +6,7 @@ public class PickupSpeed : MonoBehaviour
 {
     [SerializeField] private float multiplySpeedBy = 1.5f;
 
-    private PlayerMovem playerMovement;
+    private PlayerMovement playerMovement;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -50,7 +50,7 @@ public class PickupSpeed : MonoBehaviour
                 if (playerMovement == null)
 
                 {
-                playerMovement = collision.GetComponent<PlayerMovem>();
+                playerMovement = collision.GetComponent<PlayerMovement>();
 
                 }
 
