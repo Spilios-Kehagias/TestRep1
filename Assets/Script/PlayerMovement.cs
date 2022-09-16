@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) == true && isGrounded == true)
         {
             animator.SetTrigger("GoSlide");
-            rgBody2D.gravityScale = 15f;
+            rgBody2D.gravityScale = 9f;
             defaultFriction = false;
         }
           
@@ -62,8 +62,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift) == true)
         {
-            rgBody2D.gravityScale += 1.2f;
-            rgBody2D.gravityScale *= 1.05f;
+            rgBody2D.gravityScale += 1.1f;
+            rgBody2D.gravityScale *= 1.01f;
         }
         if (Input.GetKey(KeyCode.LeftShift) == false)
         {
