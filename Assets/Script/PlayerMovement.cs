@@ -53,21 +53,24 @@ public class PlayerMovement : MonoBehaviour
             rgBody2D.gravityScale = 20f;
             defaultFriction = false;
         }
-            if (Input.GetKey(KeyCode.LeftShift) == true)
-            {
-            rgBody2D.gravityScale *= 1.1f;
-            }
-        if (Input.GetKey(KeyCode.LeftShift) == false)
-        {
-            rgBody2D.gravityScale = gravity;
-
-        }
+          
         animator.SetBool("IsGrounded", isGrounded);
         animator.SetFloat("Movement", Mathf.Abs(moveDirection));
     }
 
     private void FixedUpdate()
     {
+        if (Input.GetKey(KeyCode.LeftShift) == true)
+        {
+            rgBody2D.gravityScale += 1.5f;
+            rgBody2D.gravityScale *= 1.05f;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) == false)
+        {
+            rgBody2D.gravityScale = gravity;
+
+        }
+
         isGrounded = false;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(GroundCheck.transform.position, 0.2f, isItGround);
         for (int i = 0; i < colliders.Length; i++)
