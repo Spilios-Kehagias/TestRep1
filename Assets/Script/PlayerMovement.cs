@@ -7,11 +7,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rgBody2D;
     private SpriteRenderer spriteRnd;
     private Animator animator;
-    public float movementSpeed = 5f;
+    private BoxCollider2D friction;
+    public float movementSpeed = 6f;
     public float jumpPower = 2000f;
     public float gravity = 1f;
     private float defaultMovementSpeed;
-    [SerializeField] private float defaultGravityForce;
+    [SerializeField] private bool defaultFriction;
     public GameObject GroundCheck;
     private bool isGrounded;
     private bool lookLeft = false;
@@ -27,15 +28,17 @@ public class PlayerMovement : MonoBehaviour
     public void Start()
     {
         defaultMovementSpeed = movementSpeed;
-        defaultGravityForce = gravity;
         rgBody2D = gameObject.GetComponent<Rigidbody2D>();
         spriteRnd = gameObject.GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
+        defaultFriction = gameObject.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        defaultFriction = true;
+
         moveDirection = Input.GetAxis("Horizontal");
 
         if (Input.GetKeyDown(KeyCode.Space) == true)
@@ -48,8 +51,12 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetTrigger("GoSlide");
             rgBody2D.gravityScale = 20f;
-
+            defaultFriction = false;
         }
+            if (Input.GetKey(KeyCode.LeftShift) == true)
+            {
+            rgBody2D.gravityScale *= 1.1f;
+            }
         if (Input.GetKey(KeyCode.LeftShift) == false)
         {
             rgBody2D.gravityScale = gravity;
