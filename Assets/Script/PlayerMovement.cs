@@ -8,8 +8,10 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteRnd;
     private Animator animator;
     public float movementSpeed = 5f;
-    public float jumpPower = 3700f;
+    public float jumpPower = 2000f;
+    public float gravity = 1f;
     private float defaultMovementSpeed;
+    [SerializeField] private float defaultGravityForce;
     public GameObject GroundCheck;
     private bool isGrounded;
     private bool lookLeft = false;
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public void Start()
     {
         defaultMovementSpeed = movementSpeed;
+        defaultGravityForce = gravity;
         rgBody2D = gameObject.GetComponent<Rigidbody2D>();
         spriteRnd = gameObject.GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
@@ -39,6 +42,17 @@ public class PlayerMovement : MonoBehaviour
         {
             tryJump = true;
             animator.SetTrigger("GoJump");
+
+        }
+        if (Input.GetKey(KeyCode.LeftShift) == true && isGrounded == true)
+        {
+            animator.SetTrigger("GoSlide");
+            rgBody2D.gravityScale = 20f;
+
+        }
+        if (Input.GetKey(KeyCode.LeftShift) == false)
+        {
+            rgBody2D.gravityScale = gravity;
 
         }
         animator.SetBool("IsGrounded", isGrounded);
