@@ -182,15 +182,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c551863e50ab84fa182622cfe1ecfb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheck: {fileID: 2699677809656261667}
   movementSpeed: 4
-  jumpForce: 6.5
-  smoothTime: 0.05
-  whatIsGround:
+  jumpPower: 3700
+  GroundCheck: {fileID: 2699677809656261667}
+  smoothDuration: 0.15
+  isItGround:
     serializedVersion: 2
     m_Bits: 8
   audioSource: {fileID: 1866086586}
-  pickupClip: {fileID: 8300000, guid: eb9ea741469ee4ac78a136f1f3ca813f, type: 3}
+  jumpSound: {fileID: 0}
 --- !u!114 &2699677810357861981
 MonoBehaviour:
   m_ObjectHideFlags: 0

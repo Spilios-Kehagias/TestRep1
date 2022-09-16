@@ -1330,12 +1330,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &704147871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2699677809656261667, guid: eb64f1e42df7745e09d876fc90b9b4a7,
-    type: 3}
-  m_PrefabInstance: {fileID: 902748469}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &798570268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,16 +1460,6 @@ PrefabInstance:
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 2198089768161740540}
-    - target: {fileID: 2699677810357861982, guid: eb64f1e42df7745e09d876fc90b9b4a7,
-        type: 3}
-      propertyPath: GroundCheck
-      value: 
-      objectReference: {fileID: 704147871}
-    - target: {fileID: 2699677810357861982, guid: eb64f1e42df7745e09d876fc90b9b4a7,
-        type: 3}
-      propertyPath: isItGround.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb64f1e42df7745e09d876fc90b9b4a7, type: 3}
 --- !u!114 &902748470 stripped
@@ -3286,7 +3270,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.5, z: 0}
+  m_ChunkCullingBounds: {x: 0.5, y: 0.5, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0

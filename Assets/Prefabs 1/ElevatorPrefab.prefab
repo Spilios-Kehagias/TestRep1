@@ -177,12 +177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e5e17536be541dda9798bbea6c623e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point1: {fileID: 983992159842710193}
-  point2: {fileID: 983992158495044666}
-  speed: 1.6
-  targetPoints:
-  - {fileID: 983992159842710193}
-  - {fileID: 983992158495044666}
+  Point1: {fileID: 983992159842710193}
+  Point2: {fileID: 983992158495044666}
+  speed: 1.8
+  nextPoint: {fileID: 983992159842710193}
 --- !u!114 &983992158984330345
 MonoBehaviour:
   m_ObjectHideFlags: 0
