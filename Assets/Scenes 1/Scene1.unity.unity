@@ -14974,6 +14974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 273597464}
   pickupClip: {fileID: 8300000, guid: c2fb79ce8aaae4ddda42382d62a37d65, type: 3}
+  timeBeforeDeletion: 0.5
 --- !u!61 &273597466
 BoxCollider2D:
   m_ObjectHideFlags: 0

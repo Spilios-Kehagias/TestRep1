@@ -7,7 +7,6 @@ public class PlayerCheckpoint : MonoBehaviour
     
     private Animator animator;
 
-
     //[SerializeField] private Sprite checkPointTaken;
     //[SerializeField] private AudioSource audioSource;
     //[SerializeField] private AudioClip pickupClip;
@@ -16,7 +15,7 @@ public class PlayerCheckpoint : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
     }
-
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,9 +25,9 @@ public class PlayerCheckpoint : MonoBehaviour
             //GetComponent<SpriteRenderer>().sprite = checkPointTaken;
             //audioSource.PlayOneShot(pickupClip);
             animator.SetTrigger("Touched");
-            
         }
 
 
     }
+    
 }

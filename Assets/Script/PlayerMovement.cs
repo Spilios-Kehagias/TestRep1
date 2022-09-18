@@ -62,8 +62,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift) == true)
         {
-            rgBody2D.gravityScale += 1.1f;
-            rgBody2D.gravityScale *= 1.01f;
+            rgBody2D.gravityScale += 1.01f;
         }
         if (Input.GetKey(KeyCode.LeftShift) == false)
         {
