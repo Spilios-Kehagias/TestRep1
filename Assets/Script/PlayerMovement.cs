@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float smoothDuration = 0.15f;
     private float moveDirection = 0f;
     private bool tryJump;
+    private bool trySlide;
     [SerializeField] private LayerMask isItGround;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip jumpSound;
@@ -37,9 +38,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        trySlide = false;
         defaultFriction = true;
 
         moveDirection = Input.GetAxis("Horizontal");
+
 
         if (Input.GetKeyDown(KeyCode.Space) == true)
         {
@@ -49,11 +52,12 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftShift) == true && isGrounded == true)
         {
-            animator.SetTrigger("GoSlide");
-            rgBody2D.gravityScale = 9f;
+            trySlide = true;
+            rgBody2D.gravityScale = 17f;
             defaultFriction = false;
         }
-          
+
+        animator.SetBool("GoSlide", trySlide);
         animator.SetBool("IsGrounded", isGrounded);
         animator.SetFloat("Movement", Mathf.Abs(moveDirection));
     }
