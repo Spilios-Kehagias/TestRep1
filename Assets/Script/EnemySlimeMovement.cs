@@ -95,5 +95,6 @@ public class EnemySlimeMovement : MonoBehaviour
         rigidBody2D.AddForce(killForce, ForceMode2D.Impulse);
         gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x,-gameObject.transform.localScale.y);
         audioSource.PlayOneShot(pickupClip);
+        
     } 
 }
