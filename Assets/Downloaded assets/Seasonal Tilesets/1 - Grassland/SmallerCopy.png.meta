@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 164cb70d7976940c597f39a8db828bbb
+guid: caa97621a40ca4d87a5fb33a4c1fd5a7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 4
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -3360,7 +3360,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grassland_entities (16 x 16)_147: 1638995903
+      Grassland_entities (16 x 16)_84: -564875026
       Grassland_entities (16 x 16)_114: 131845666
       Grassland_entities (16 x 16)_61: 1307100732
       Grassland_entities (16 x 16)_131: 2086932777
@@ -3514,7 +3514,7 @@ TextureImporter:
       Grassland_entities (16 x 16)_138: 1148140286
       Grassland_entities (16 x 16)_113: -1742083120
       Grassland_entities (16 x 16)_93: 1185457614
-      Grassland_entities (16 x 16)_84: -564875026
+      Grassland_entities (16 x 16)_147: 1638995903
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
