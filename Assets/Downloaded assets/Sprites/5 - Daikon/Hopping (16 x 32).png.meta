@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 611b9e0efc9b04f59a0a02c978bb4ba6
+guid: b365cd06e84baae4f8f6d4947227339f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,12 +104,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blink (32 x 32)_0
+      name: Hopping (16 x 32)_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 2
         y: 0
-        width: 16
+        width: 12
         height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55afc6f169392647bcaf3ec18e716fe
-      internalID: -1133399971
+      spriteID: 4e2f86c441a40e74594df34389a7eac2
+      internalID: -656957175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blink (32 x 32)_1
+      name: Hopping (16 x 32)_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 0
-        width: 16
-        height: 18
+        x: 18
+        y: 1
+        width: 12
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5cf9e30d121445409cc1e5356567eb2
-      internalID: 789197585
+      spriteID: 36333b8c3acc634458cf667d3d95505d
+      internalID: -762959538
       vertices: []
       indices: 
       edges: []
@@ -156,8 +156,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blink (32 x 32)_0: -1133399971
-      Blink (32 x 32)_1: 789197585
+      Hopping (16 x 32)_1: -762959538
+      Hopping (16 x 32)_0: -656957175
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

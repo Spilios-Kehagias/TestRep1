@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 611b9e0efc9b04f59a0a02c978bb4ba6
+guid: b35e54af78e88a84dbbdf4291f135c2e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,9 +45,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blink (32 x 32)_0
+      name: Idle_(48 x 32)_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 0
-        width: 16
-        height: 18
+        width: 35
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,29 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55afc6f169392647bcaf3ec18e716fe
-      internalID: -1133399971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blink (32 x 32)_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 16
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5cf9e30d121445409cc1e5356567eb2
-      internalID: 789197585
+      spriteID: 066d1f6bc4a90284ab34d0499871c58b
+      internalID: 642576839
       vertices: []
       indices: 
       edges: []
@@ -156,8 +135,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blink (32 x 32)_0: -1133399971
-      Blink (32 x 32)_1: 789197585
+      Idle_(48 x 32)_0: 642576839
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

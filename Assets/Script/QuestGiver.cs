@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class QuestGiver : MonoBehaviour
 {
+    private Animator animator;
+    
     [SerializeField] private GameObject questGiverText;
 
     [SerializeField] private Text textComponent;
@@ -16,14 +18,15 @@ public class QuestGiver : MonoBehaviour
     void Start()
     {
         questGiverText.SetActive(false);
+        animator = gameObject.GetComponent<Animator>();
 
         //textComponent.text = questBeginText;
     }
 
     // Update is called once per frame
-    void Update()
+   private void Update()
     {
-        
+      
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,24 +34,25 @@ public class QuestGiver : MonoBehaviour
         if (collision.CompareTag("Player") == true)
         {
             questGiverText.SetActive(true);
+            animator.SetTrigger("WakeUp");
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") == true)
+        if(collision.CompareTag("Player") == false)
         {
             //if (collision.GetComponent<PlayerState>().iceaCreamAmount >= amountToCollect)
             //{
-                //textComponent.text = questCompleteText;
-                //collision.GetComponent<PlayerQuest>().isQuestComplete = true;
+            //textComponent.text = questCompleteText;
+            //collision.GetComponent<PlayerQuest>().isQuestComplete = true;
             //}
 
             //else
             //{
-                //textComponent.text = questBeginText;
+            //textComponent.text = questBeginText;
             //}
-
+            animator.SetTrigger("Sleep");
             questGiverText.SetActive(false);
         }
     }
