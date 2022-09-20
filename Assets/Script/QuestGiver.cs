@@ -26,7 +26,7 @@ public class QuestGiver : MonoBehaviour
     // Update is called once per frame
    private void Update()
     {
-      
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,7 +40,7 @@ public class QuestGiver : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") == false)
+        if(collision.CompareTag("Player") == true)
         {
             //if (collision.GetComponent<PlayerState>().iceaCreamAmount >= amountToCollect)
             //{
@@ -52,8 +52,8 @@ public class QuestGiver : MonoBehaviour
             //{
             //textComponent.text = questBeginText;
             //}
-            animator.SetTrigger("Sleep");
             questGiverText.SetActive(false);
+            animator.SetTrigger("Sleep");
         }
     }
 }
