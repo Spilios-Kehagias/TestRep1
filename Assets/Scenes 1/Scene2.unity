@@ -18940,8 +18940,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   groundCheck: {fileID: 1085197579}
-  audioSource: {fileID: 0}
-  pickupClip: {fileID: 0}
+  audioSource: {fileID: 1388800557}
+  pickupClip: {fileID: 8300000, guid: 7dd501fd1a370c440a4201fc6dbcad7a, type: 3}
+--- !u!82 &1388800557 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9055004918896441540, guid: 64ec2c982d353434d8690aeb5b5dfb46,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989975273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1390290615
 GameObject:
   m_ObjectHideFlags: 0
@@ -116198,7 +116204,7 @@ PrefabInstance:
     - target: {fileID: 9050752095351556400, guid: 64ec2c982d353434d8690aeb5b5dfb46,
         type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9050752095351556403, guid: 64ec2c982d353434d8690aeb5b5dfb46,
         type: 3}
