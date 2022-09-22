@@ -192,7 +192,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   audioSource: {fileID: 1866086586}
-  jumpSound: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: eb9ea741469ee4ac78a136f1f3ca813f, type: 3}
 --- !u!114 &2699677810357861981
 MonoBehaviour:
   m_ObjectHideFlags: 0
