@@ -38,12 +38,7 @@ public class PickupIceCream : MonoBehaviour
             particles.Play();
             audioSource.PlayOneShot(pickupClip);
             removeGameObject = true;
-
-            if (collision.GetComponent<PlayerState>().iceaCreamAmount >= amountToCollect)
-            {
-                collision.GetComponent<PlayerQuest>().isQuestComplete = true;
-                portalToOpenWhenQuestIsComplete.SetActive(false);
-            }
+          
         }
     }
 }
