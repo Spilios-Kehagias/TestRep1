@@ -28,7 +28,7 @@ public class CheckPointAudio : MonoBehaviour
         if (collision.CompareTag("Player") == true)
         {
             audioSource.PlayOneShot(pickupClip);
-            removeGameObject = true;
+            Destroy(gameObject.GetComponent<Collider2D>());
         }
     }
 }
