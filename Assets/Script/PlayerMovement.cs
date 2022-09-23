@@ -130,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public bool IsFalling()
     {
-        if (rgBody2D.velocity.y < -1f)
+        if (rgBody2D.velocity.y < 0f)
         {
             return true;
         }
