@@ -9,6 +9,7 @@ public class PickupCoin : MonoBehaviour
 
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
+    [SerializeField] private ParticleSystem particles;
 
     private bool canPickupCoin = true;
 
@@ -38,6 +39,7 @@ public class PickupCoin : MonoBehaviour
                 audioSource.PlayOneShot(pickupClip);
                 spriteRenderer.sprite = null;
                 animator.enabled = false;
+                particles.Play();
                 removeGameObject = true;
                 canPickupCoin = false;
             }      
