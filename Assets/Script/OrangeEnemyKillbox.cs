@@ -18,6 +18,7 @@ public class OrangeEnemyKillbox : MonoBehaviour
             if (collision.gameObject.GetComponent<PlayerMovement>().IsFalling() == true)
             {
                 gameObject.GetComponentInParent<OrangeEnemyMovement>().KillMe();
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }

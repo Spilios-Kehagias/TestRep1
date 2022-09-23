@@ -28,7 +28,7 @@ public class PlayerState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+     
     }
 
     public void DoHarm(int doHarmByThisMuch)
@@ -58,6 +58,7 @@ public class PlayerState : MonoBehaviour
     }
     public void IceCreamPickup()
     {
-        iceaCreamAmount++; 
+        iceaCreamAmount++;
+        healthPoints++;
     }
 }
