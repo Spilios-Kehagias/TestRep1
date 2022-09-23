@@ -18,6 +18,7 @@ public class SnowEnemyKillbox : MonoBehaviour
             if (collision.gameObject.GetComponent<PlayerMovement>().IsFalling() == true)
             {
                 gameObject.GetComponentInParent<SnowEnemyMovement>().KillMe();
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }
