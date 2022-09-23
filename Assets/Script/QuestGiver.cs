@@ -29,6 +29,7 @@ public class QuestGiver : MonoBehaviour
     {
         if (collision.CompareTag("Player") == true)
         {
+            animator.SetTrigger("WakeUp");
             if (collision.GetComponent<PlayerState>().coinAmount >= 40)
             {
                 textComponent.text = questCompleteText;
@@ -46,16 +47,6 @@ public class QuestGiver : MonoBehaviour
     {
         if(collision.CompareTag("Player") == true)
         {
-            //if (collision.GetComponent<PlayerState>().iceaCreamAmount >= amountToCollect)
-            //{
-            //textComponent.text = questCompleteText;
-            //collision.GetComponent<PlayerQuest>().isQuestComplete = true;
-            //}
-
-            //else
-            //{
-            //textComponent.text = questBeginText;
-            //}
             questGiverText.SetActive(false);
             animator.SetTrigger("Sleep");
         }
