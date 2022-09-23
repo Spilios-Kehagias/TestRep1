@@ -10,9 +10,11 @@ public class QuestGiver : MonoBehaviour
     [SerializeField] private GameObject questGiverText;
 
     [SerializeField] private Text textComponent;
-    //[SerializeField] private string questBeginText;
-    //[SerializeField] private string questCompleteText;
-    //[SerializeField] private int amountToCollect = 1;
+
+    
+    [SerializeField] private string questBeginText;
+    [SerializeField] private string questCompleteText;
+    [SerializeField] private int amountToCollect = 40;
 
     // Start is called before the first frame update
     void Start()
@@ -20,21 +22,23 @@ public class QuestGiver : MonoBehaviour
         questGiverText.SetActive(false);
         animator = gameObject.GetComponent<Animator>();
 
-        //textComponent.text = questBeginText;
-    }
-
-    // Update is called once per frame
-   private void Update()
-    {
-       
+        textComponent.text = questBeginText;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") == true)
         {
+            if (collision.GetComponent<PlayerState>().coinAmount >= 40)
+            {
+                textComponent.text = questCompleteText;
+                collision.GetComponent<PlayerQuest>().isQuestComplete = true;
+            }
+            else
+            {
+                textComponent.text = questBeginText;
+            }
             questGiverText.SetActive(true);
-            animator.SetTrigger("WakeUp");
         }
     }
 
