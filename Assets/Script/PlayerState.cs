@@ -8,7 +8,6 @@ public class PlayerState : MonoBehaviour
     public int initialHealthPoints = 3;
 
     public int coinAmount = 0;
-    public int iceaCreamAmount = 0;
 
     private GameObject respawnPosition;
     [SerializeField] private GameObject startPosition;
@@ -57,8 +56,4 @@ public class PlayerState : MonoBehaviour
         respawnPosition = newRespawnPosition;
     }
 
-    public void IceCreamPickup()
-    {
-        iceaCreamAmount++;
-    }
 }
