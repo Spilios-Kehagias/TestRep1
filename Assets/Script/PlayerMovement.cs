@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private float moveDirection = 0f;
     private bool tryJump;
     private bool trySlide;
+    //private bool isFalling;
     [SerializeField] private LayerMask isItGround;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip jumpSound;
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     {
         trySlide = false;
         defaultFriction = true;
+        //isFalling = false;
 
         moveDirection = Input.GetAxis("Horizontal");
 
@@ -57,9 +59,15 @@ public class PlayerMovement : MonoBehaviour
             defaultFriction = false;
         }
 
+        //if (rgBody2D.velocity.y < 0f)
+        //{
+            //isFalling = true;
+        //}
+
         animator.SetBool("GoSlide", trySlide);
         animator.SetBool("IsGrounded", isGrounded);
         animator.SetFloat("Movement", Mathf.Abs(moveDirection));
+        //animator.SetBool("IsFalling", isFalling);
     }
 
     private void FixedUpdate()
@@ -128,14 +136,19 @@ public class PlayerMovement : MonoBehaviour
         spriteRnd.flipX = !lookLeft;
         lookLeft = !lookLeft;
     }
-    public bool IsFalling()
-    {
-        if (rgBody2D.velocity.y < 0f)
-        {
-            return true;
-        }
+   public bool IsFalling()
+{
+       if (rgBody2D.velocity.y < 0f)
+      {
+          return true;
+       }
         return false;
+
+        //animator.SetBool("IsFalling", isFalling);
     }
+   
+   
+
 
     public void ResetMovementSpeed()
     {
