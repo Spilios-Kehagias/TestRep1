@@ -11,10 +11,11 @@ public class PortalAccessed1 : MonoBehaviour
     {
         if (collision.CompareTag("Player") == true)
         {
-            GameObserver.SaveCoinsToMemory(collision.GetComponent<PlayerState>().coinAmount);
-            SceneManager.LoadScene(levelToLoad);
-            
-            
+            if (collision.GetComponent<PlayerQuest>().isQuestComplete == true)
+            {
+                GameObserver.SaveCoinsToMemory(collision.GetComponent<PlayerState>().coinAmount);
+                SceneManager.LoadScene(levelToLoad);
+            }
         }
     }
 

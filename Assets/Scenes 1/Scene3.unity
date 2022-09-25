@@ -1087,7 +1087,7 @@ PrefabInstance:
     - target: {fileID: 2699677810357861952, guid: eb64f1e42df7745e09d876fc90b9b4a7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2699677810357861952, guid: eb64f1e42df7745e09d876fc90b9b4a7,
         type: 3}
@@ -1183,7 +1183,7 @@ PrefabInstance:
     - target: {fileID: 2240765436182991675, guid: 745b9f54f541d430b81db330967d2c05,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2240765436182991675, guid: 745b9f54f541d430b81db330967d2c05,
         type: 3}
@@ -3921,7 +3921,7 @@ PrefabInstance:
     - target: {fileID: 8653097638401821094, guid: eca3a7091c710449ea04c92e8e2608eb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8653097638401821094, guid: eca3a7091c710449ea04c92e8e2608eb,
         type: 3}
@@ -16380,7 +16380,7 @@ PrefabInstance:
     - target: {fileID: 6604291760677673059, guid: c3edf4ad5d8d84505913713bed029aea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6604291760677673059, guid: c3edf4ad5d8d84505913713bed029aea,
         type: 3}
@@ -48984,7 +48984,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2198089768161740540
 GameObject:
@@ -49015,7 +49015,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2288292474804819821
 Transform:
@@ -49031,7 +49031,7 @@ Transform:
   m_Children:
   - {fileID: 2288292475344277812}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2288292474804819823
 GameObject:
@@ -49245,7 +49245,7 @@ GameObject:
   - component: {fileID: 7826628219925896613}
   - component: {fileID: 7826628219925896612}
   - component: {fileID: 7826628219925896615}
-  - component: {fileID: 7826628219925896664}
+  - component: {fileID: 7826628219925896616}
   m_Layer: 0
   m_Name: ToothFairy
   m_TagString: Untagged
@@ -49339,7 +49339,7 @@ Transform:
   m_Children:
   - {fileID: 7826628219945817698}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7826628219925896615
 BoxCollider2D:
@@ -49367,7 +49367,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 1.7}
   m_EdgeRadius: 0
---- !u!114 &7826628219925896664
+--- !u!114 &7826628219925896616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49376,14 +49376,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7826628219925896611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ddda15210044ff99a2ae9f1d2223d6, type: 3}
+  m_Script: {fileID: 11500000, guid: c5575a2ab6b7f624a915353ff89dd143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   questGiverText: {fileID: 7826628219637414173}
   textComponent: {fileID: 7826628221359115233}
-  questBeginText: Thank you for building me this house! It's wonderful!
-  questCompleteText: 
-  amountToCollect: 40
+  questCompleteText: Thank you for building me this house! It's wonderful!
 --- !u!1 &7826628219945817697
 GameObject:
   m_ObjectHideFlags: 0
