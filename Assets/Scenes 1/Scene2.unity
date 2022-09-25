@@ -8788,14 +8788,19 @@ PrefabInstance:
     - target: {fileID: 3245221798779546218, guid: d078ead2ee1212f45b5c983d44714a5e,
         type: 3}
       propertyPath: questBeginText
-      value: You'll need more coins. Planks are not free you know..
+      value: You'll need more coins. Bricks are not free you know..
       objectReference: {fileID: 0}
     - target: {fileID: 3245221798779546218, guid: d078ead2ee1212f45b5c983d44714a5e,
         type: 3}
       propertyPath: questCompleteText
       value: Great job gathering all these coins! Go through the portal to buy the
-        planks we need :D
+        bricks we need :D
       objectReference: {fileID: 0}
+    - target: {fileID: 3245221800008163975, guid: d078ead2ee1212f45b5c983d44714a5e,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 7284664b1aa4f45f0a118f80f5ec1349, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d078ead2ee1212f45b5c983d44714a5e, type: 3}
 --- !u!1 &1028088945
@@ -118117,7 +118122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353ae297b6c1a40fbbc17e8734fb2258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 0
+  levelToLoad: 3
 --- !u!4 &2288292475344277812
 Transform:
   m_ObjectHideFlags: 0
@@ -118290,6 +118295,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3245221800008163975, guid: d078ead2ee1212f45b5c983d44714a5e,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 7284664b1aa4f45f0a118f80f5ec1349, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d078ead2ee1212f45b5c983d44714a5e, type: 3}
 --- !u!1001 &5134916137083810872

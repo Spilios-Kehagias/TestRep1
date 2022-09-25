@@ -1036,7 +1036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Good job on helping Hjelti \n\nwith her quest!\n\n\n\nmaybe there will
+  m_Text: "Good job on helping Hjelti \n\nwith her quest!\n\n\n\nPerhaps there will
     be more adventures\n\nto come in the future..."
 --- !u!222 &1965395425
 CanvasRenderer:
